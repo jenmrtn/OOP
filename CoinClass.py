@@ -6,9 +6,14 @@ import random
 class Coin:
     # The _ _init_ _ method initializes the
     # sideup data attribute with 'Heads'.
+    #use uppercase for class definition name
 
     def __init__(self):
         self.sideup = 'Heads'
+        #this initializes the instance
+        #this is defining attributes
+        #Like self.bullets= xxx
+
 
     # The toss method generates a random number
     # in the range of 0 through 1. If the number
@@ -20,9 +25,12 @@ class Coin:
             self.sideup = 'Heads'
         else:
             self.sideup = 'Tails'
-
+         #This is defining the methods
     # The get_sideup method returns the value
     # referenced by sideup.
-
+        #Mutator method changes the value of an attribute. Also known as set method
+        #Get method or Accessor method returns the value of an attribute
+        #never combine the two
+        # ONly want to accomplish one thing with a method
     def get_sideup(self):
             return self.sideup
