@@ -1,7 +1,7 @@
 #This program demonstrates the BankAccount class.
 
 import BankAccountClass as bc
-
+#The instance is savings
 def main():
     
    # Get the starting balance.
