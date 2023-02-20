@@ -20,14 +20,14 @@ for i in dict.values():
     if i[3]==customer.get_id():
         transaction=fc.Transaction(i[0],i[1],i[2],i[3])
         acc+= transaction.get_cost()
-        print(f'Order Item: {transaction.get_item()} Price:' '${:.2f}'.format(transaction.get_cost()))
+        print(f'Order Item: {transaction.get_item()} Price:' ' ${:.2f}'.format(transaction.get_cost()))
 print('Total Cost:', '${:.2f}'.format(acc))
 if customer.get_status()== True:
     discamnt=float(acc)*discount
     print('Member Discount:','${:.2f}'.format(discamnt))
     Tcost='${:.2f}'.format(acc-discamnt)
     discamnt='${:.2f}'.format(discamnt)
-    print(f'Total Cost after discount:{Tcost}')
+    print(f'Total Cost after discount: {Tcost}')
 else:
     print('Total Cost:','${:.2f}'.format(acc))
 
